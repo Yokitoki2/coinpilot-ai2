@@ -61,3 +61,10 @@ CREATE TABLE ai_cache (
 CREATE INDEX idx_portfolios_telegram_id ON portfolios(telegram_id);
 CREATE INDEX idx_analysis_history_telegram_id ON analysis_history(telegram_id);
 CREATE INDEX idx_energy_transactions_telegram_id ON energy_transactions(telegram_id);
+```
+## 2. Table Relationships Summary
+
+- users.telegram_id -> portfolios.telegram_id (1 : Many)
+- users.telegram_id -> analysis_history.telegram_id (1 : Many)
+- users.telegram_id -> energy_transactions.telegram_id (1 : Many)
+- users.telegram_id -> users.referrer_id (Self-referencing Foreign Key for invites)
