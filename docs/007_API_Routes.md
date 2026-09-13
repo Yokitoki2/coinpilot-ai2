@@ -1,15 +1,11 @@
-Markdown
-# 007 — API Routes Specification (FastAPI)
-
-## Overview
+007 — API Routes Specification (FastAPI)
+Overview
 RESTful API specification for CoinPilot AI backend services, handling Telegram WebApp authentication, market analysis queries, user energy balance management, and portfolio tracking.
 
----
-
-## 1. Authentication
+1. Authentication
 All endpoints require Telegram WebApp initData validation via HMAC-SHA256 signature passed in the headers.
 
-```http
+HTTP
 Authorization: Bearer <telegram_init_data_string>
 2. Market & AI Analysis Endpoints
 GET /api/v1/analysis/{symbol}
