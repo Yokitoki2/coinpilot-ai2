@@ -13,3 +13,4 @@ CoinPilot AI is an institutional-grade crypto trading and portfolio management a
 ---
 
 ## 3. High-Level System Architecture
+-
